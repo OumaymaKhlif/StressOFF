@@ -1,0 +1,54 @@
+name: stressoff
+description: "StressOFF - A health and meal analysis app"
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  fl_chart: ^0.70.0
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.1.1
+  firebase_auth: ^5.1.1
+  cloud_firestore: ^5.0.2
+  firebase_storage: ^12.4.10
+  image: ^4.0.17
+  image_picker: ^1.1.2
+  http: ^1.2.0
+  intl: ^0.19.0
+  path: ^1.9.0
+  flutter_tts: ^4.0.2
+  flutter_local_notifications: ^17.2.1
+  font_awesome_flutter: 10.12.0
+  google_sign_in: ^6.2.1
+  device_calendar: ^4.3.3
+  permission_handler: ^11.0.1
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: "^0.14.4"
+
+flutter:
+  uses-material-design: true
+
+  # Déclarer le dossier assets pour les images
+  assets:
+    - assets/images/
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/"
+  android_icon_name: "ic_launcher"  # nom par défaut de l’icône sur Android
+  ios_icon_name: "AppIcon"          # nom par défaut de l’icône sur iOS
+  remove_alpha_ios: true
+  adaptive_icon_background: "#FFFFFF" # Couleur de fond pour icône adaptative Android
+  adaptive_icon_foreground: "assets/images/logo.png"
+  app_name: "StressOFF"  # Nom affiché sur le téléphone
