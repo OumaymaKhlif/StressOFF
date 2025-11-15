@@ -1,4 +1,4 @@
-![StressOFF Logo](./assets/logo.png)
+![StressOFF Logo](./assets/images/logo.png)
 # StressOFF 🌿
 
 ![Python](https://img.shields.io/badge/python-3.13-blue)
