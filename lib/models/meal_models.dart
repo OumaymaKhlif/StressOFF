@@ -1,6 +1,7 @@
 /// This file defines data structures (models) used to store, retrieve,
 /// and manipulate information related to analyzed meals (photos, ingredients,
 /// nutritional values, health advice) and daily summaries.
+library;
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 

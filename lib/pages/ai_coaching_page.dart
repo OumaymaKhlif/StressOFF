@@ -7,7 +7,7 @@ import '../services/coaching_service.dart';
 import '../services/firebase_service.dart';
 
 class AICoachingPage extends StatefulWidget {
-  const AICoachingPage({Key? key}) : super(key: key);
+  const AICoachingPage({super.key});
 
   @override
   State<AICoachingPage> createState() => _AICoachingPageState();
@@ -195,7 +195,7 @@ class _AICoachingPageState extends State<AICoachingPage> {
       backgroundColor: Colors.grey[50],
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Color(0xFF65B8BF),
+        backgroundColor: const Color(0xFF65B8BF),
         title: const Text(
           'AI Health Coach',
           style: TextStyle(fontWeight: FontWeight.w600),
@@ -290,7 +290,7 @@ class _AICoachingPageState extends State<AICoachingPage> {
                   ),
                   const SizedBox(width: 8),
                   Container(
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       color: Color(0xFF65B8BF),
                       shape: BoxShape.circle,
                     ),
@@ -319,14 +319,14 @@ class _AICoachingPageState extends State<AICoachingPage> {
         children: [
           if (!message.isUser) ...[
             CircleAvatar(
-              backgroundColor: message.isError ? Colors.red[100] : Color(0xFFF1F6F7),
+              backgroundColor: message.isError ? Colors.red[100] : const Color(0xFFF1F6F7),
               radius: 18,
               child: Transform(
               alignment: Alignment.center,
               transform: Matrix4.rotationY(message.isError ? 0 : 3.1416), // 3.1416 rad = 180°
                 child: Icon(
                   message.isError ? Icons.error_outline : Icons.psychology,
-                  color: message.isError ? Colors.red : Color(0xFF65B8BF),
+                  color: message.isError ? Colors.red : const Color(0xFF65B8BF),
                   size: 28,
                 ),
               ),
@@ -338,7 +338,7 @@ class _AICoachingPageState extends State<AICoachingPage> {
               padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
               decoration: BoxDecoration(
                 color: message.isUser
-                    ? Color(0xFF65B8BF)
+                    ? const Color(0xFF65B8BF)
                     : (message.isError ? Colors.red[50] : Colors.white),
                 borderRadius: BorderRadius.circular(20).copyWith(
                   topLeft: message.isUser ? const Radius.circular(20) : Radius.zero,
@@ -379,7 +379,7 @@ class _AICoachingPageState extends State<AICoachingPage> {
           ),
           if (message.isUser) ...[
             const SizedBox(width: 8),
-            CircleAvatar(
+            const CircleAvatar(
               backgroundColor: Color(0xFFF1F6F7),
               radius: 18,
               child: Icon(

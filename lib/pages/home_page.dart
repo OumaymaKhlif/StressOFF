@@ -1,5 +1,6 @@
 /// HomePage: Main landing page of the app
 /// It includes greeting, current date, bottom navigation, and page body
+library;
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';

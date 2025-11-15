@@ -1,6 +1,7 @@
 /// This page handles user authentication for the app.
 /// Users can log in with an existing account or create a new account.
 /// After successful authentication, users are redirected to the Profile Setup page.
+library;
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'profile_setup_page.dart';

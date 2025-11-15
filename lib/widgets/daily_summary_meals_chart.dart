@@ -9,13 +9,13 @@ class DailySummaryMealsChart extends StatelessWidget {
   final double totalCalories;
 
   const DailySummaryMealsChart({
-    Key? key,
+    super.key,
     required this.protein,
     required this.carbs,
     required this.fats,
     required this.fibers,
     required this.totalCalories,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -38,25 +38,25 @@ class DailySummaryMealsChart extends StatelessWidget {
               sections: [
                 PieChartSectionData(
                   value: protein,
-                  color: Color(0xFF65B8BF),
+                  color: const Color(0xFF65B8BF),
                   showTitle: false,
                   radius: 15,
                 ),
                 PieChartSectionData(
                   value: carbs,
-                  color: Color(0xFFF0D286),
+                  color: const Color(0xFFF0D286),
                   showTitle: false,
                   radius: 15,
                 ),
                 PieChartSectionData(
                   value: fats,
-                  color: Color(0xFFF28B89),
+                  color: const Color(0xFFF28B89),
                   showTitle: false,
                   radius: 15,
                 ),
                 PieChartSectionData(
                   value: fibers, // ← nouveau
-                  color: Color(0xFFA4D4A2), // couleur pastel pour fibers
+                  color: const Color(0xFFA4D4A2), // couleur pastel pour fibers
                   showTitle: false,
                   radius: 15,
                 ),

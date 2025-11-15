@@ -5,6 +5,7 @@
 ///     - Analyze & Save: analyzes and saves the meal to Firebase.
 /// Displays today’s meals with details like dish name, meal type, and calories.
 /// Shows a daily nutritional summary with charts for protein, carbs, fats, fibers, and calories.
+library;
 
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -332,10 +333,10 @@ class _MealAnalysisPageState extends State<MealAnalysisPage> {
               ),
             ),
             const SizedBox(height: 10),
-            Row(
+            const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
-              children: const [
+              children: [
                 Text(
                   'Unleash the Secret of Every Bite',
                   style: TextStyle(

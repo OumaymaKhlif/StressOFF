@@ -1,4 +1,5 @@
 /// This page allows the user to view, edit, and save their personal
+library;
 
 import 'dart:io';
 import 'dart:convert';
@@ -284,7 +285,7 @@ class _UserSettingsPageState extends State<UserSettingsPage> {
           ),
           labelStyle: TextStyle(color: defaultColor),
           floatingLabelStyle: TextStyle(color: defaultColor),
-          iconColor: MaterialStateColor.resolveWith((states) => states.contains(MaterialState.focused) ? focusColor : defaultColor),
+          iconColor: WidgetStateColor.resolveWith((states) => states.contains(WidgetState.focused) ? focusColor : defaultColor),
         ),
       ),
       child: Scaffold(
@@ -314,10 +315,10 @@ class _UserSettingsPageState extends State<UserSettingsPage> {
                               : (_profileImageBase64 != null ? MemoryImage(base64Decode(_profileImageBase64!)) as ImageProvider : null),
                           child: (_profileImageFile == null && _profileImageBase64 == null) ? const Icon(Icons.person, size: 50, color: focusColor) : null,
                         ),
-                        Positioned(
+                        const Positioned(
                           bottom: 0,
                           right: 0,
-                          child: CircleAvatar(radius: 18, backgroundColor: focusColor, child: const Icon(Icons.camera_alt, size: 16, color: Colors.white)),
+                          child: CircleAvatar(radius: 18, backgroundColor: focusColor, child: Icon(Icons.camera_alt, size: 16, color: Colors.white)),
                         ),
                       ],
                     ),
@@ -333,7 +334,7 @@ class _UserSettingsPageState extends State<UserSettingsPage> {
                 const SizedBox(height: 16),
                 /// ---------------- GENDER ----------------
                 DropdownButtonFormField<String>(
-                  value: _gender,
+                  initialValue: _gender,
                   decoration: const InputDecoration(labelText: 'Gender', prefixIcon: Icon(Icons.wc)),
                   items: _genderOptions.map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(),
                   onChanged: (v) => setState(() => _gender = v!),
@@ -387,7 +388,7 @@ class _UserSettingsPageState extends State<UserSettingsPage> {
                 const SizedBox(height: 16),
                 /// ---------------- GOAL ----------------
                 DropdownButtonFormField<String>(
-                  value: _goal,
+                  initialValue: _goal,
                   decoration: const InputDecoration(labelText: 'Fitness & Health Goal', prefixIcon: Icon(Icons.flag)),
                   items: _goalOptions.map((v) => DropdownMenuItem(value: v, child: Text(v))).toList(),
                   onChanged: (v) => setState(() => _goal = v!),

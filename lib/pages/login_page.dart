@@ -1,4 +1,5 @@
 /// LoginPage: Handles user login with Email/Password or Google Sign-In
+library;
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -100,7 +101,7 @@ class _LoginPageState extends State<LoginPage> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(
+          const SnackBar(
             content: Text('Google sign-in failed. Please try again.'),
             backgroundColor: Colors.redAccent,
           ),

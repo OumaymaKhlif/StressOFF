@@ -25,15 +25,15 @@ class DailySummaryPage extends StatelessWidget {
             // Header
             Card(
               elevation: 4,
-              color: Color(0xFFF1F6F7),
+              color: const Color(0xFFF1F6F7),
               child: Padding(
                 padding: const EdgeInsets.all(20),
                 child: Column(
                   children: [
-                    Icon(
+                    const Icon(
                       Icons.calendar_today,
                       size: 60,
-                      color: const Color(0xFF65B8BF),
+                      color: Color(0xFF65B8BF),
                     ),
                     const SizedBox(height: 12),
                     Text(
@@ -145,15 +145,15 @@ class DailySummaryPage extends StatelessWidget {
               ],
             ),
             const Divider(height: 24),
-            _buildNutritionBar('Calories', nutrition.calories, 2000, Color(0xFFE3997E), 'kcal'),
+            _buildNutritionBar('Calories', nutrition.calories, 2000, const Color(0xFFE3997E), 'kcal'),
             const SizedBox(height: 16),
-            _buildNutritionBar('Proteins', nutrition.proteins, 60, Color(0xFF65B8BF), 'g'),
+            _buildNutritionBar('Proteins', nutrition.proteins, 60, const Color(0xFF65B8BF), 'g'),
             const SizedBox(height: 16),
-            _buildNutritionBar('Carbs', nutrition.carbs, 250, Color(0xFFF0D286), 'g'),
+            _buildNutritionBar('Carbs', nutrition.carbs, 250, const Color(0xFFF0D286), 'g'),
             const SizedBox(height: 16),
-            _buildNutritionBar('Fats', nutrition.fats, 70, Color(0xFFF28B89), 'g'),
+            _buildNutritionBar('Fats', nutrition.fats, 70, const Color(0xFFF28B89), 'g'),
             const SizedBox(height: 16),
-            _buildNutritionBar('Fiber', nutrition.fibers, 30, Color(0xFFA4D4A2), 'g'),
+            _buildNutritionBar('Fiber', nutrition.fibers, 30, const Color(0xFFA4D4A2), 'g'),
           ],
         ),
       ),
@@ -205,7 +205,7 @@ class DailySummaryPage extends StatelessWidget {
   Widget _buildGoalsCard(bool needsMet) {
     return Card(
       elevation: 4,
-      color: needsMet ? Colors.green.shade50 : Color(0xFFF4E4E1),
+      color: needsMet ? Colors.green.shade50 : const Color(0xFFF4E4E1),
       child: Padding(
         padding: const EdgeInsets.all(20),
         child: Row(
@@ -213,7 +213,7 @@ class DailySummaryPage extends StatelessWidget {
             Icon(
               needsMet ? Icons.check_circle : Icons.info,
               size: 40,
-              color: needsMet ? Colors.green : Color(0xFFCC7567),
+              color: needsMet ? Colors.green : const Color(0xFFCC7567),
             ),
             const SizedBox(width: 16),
             Expanded(
@@ -225,7 +225,7 @@ class DailySummaryPage extends StatelessWidget {
                     style: TextStyle(
                       fontSize: 18,
                       fontWeight: FontWeight.bold,
-                      color: needsMet ? Colors.green.shade900 : Color(0xFFCC7567),
+                      color: needsMet ? Colors.green.shade900 : const Color(0xFFCC7567),
                     ),
                   ),
                   const SizedBox(height: 4),
@@ -234,7 +234,7 @@ class DailySummaryPage extends StatelessWidget {
                         ? 'Your nutrition was balanced today'
                         : 'Some adjustments are recommended',
                     style: TextStyle(
-                      color: needsMet ? Colors.green.shade700 : Color(0xFFCC7567),
+                      color: needsMet ? Colors.green.shade700 : const Color(0xFFCC7567),
                     ),
                   ),
                 ],

@@ -2,6 +2,7 @@
 /// It collects authentication data and basic profile information.
 /// After registration, the user is redirected to UserSettingsPage
 /// with prefilled initial values.
+library;
 
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -206,7 +207,7 @@ class _SignupPageState extends State<SignupPage> {
 
                 // Gender
                 DropdownButtonFormField<String>(
-                  value: _gender,
+                  initialValue: _gender,
                   decoration: _inputDecoration('Gender'),
                   hint: const Text('Gender'),
                   items: ['Male', 'Female', 'Other']
@@ -325,12 +326,12 @@ class _SignupPageState extends State<SignupPage> {
       avatar: FaIcon(
         icon,
         size: 10,
-        color: Color(0xFFF1F6F7).withOpacity(0.7),
+        color: const Color(0xFFF1F6F7).withOpacity(0.7),
       ),
       label: Text(
         label,
         style: TextStyle(
-          color: Color(0xFFF1F6F7).withOpacity(0.9),
+          color: const Color(0xFFF1F6F7).withOpacity(0.9),
           fontWeight: FontWeight.w500,
         ),
       ),

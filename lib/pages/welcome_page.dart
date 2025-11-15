@@ -2,6 +2,7 @@
 /// It fades in smoothly, displays the app logo and a meditation illustration,
 /// then automatically redirects the user to AuthWrapper after 4 seconds.
 ///
+library;
 import 'dart:async';
 import 'package:flutter/material.dart';
 import '../main.dart';

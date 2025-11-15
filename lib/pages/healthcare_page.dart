@@ -2,6 +2,7 @@
 /// It displays daily health metrics such as sleep, stress index, activity data,
 /// alerts, calendar reminders, and AI-based health insights.
 /// Users can also trigger an analysis of their daily data to receive recommendations.
+library;
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../models/health_models.dart';
@@ -14,7 +15,7 @@ import '../services/calender_service.dart';
 
 
 class HealthcarePage extends StatefulWidget {
-  const HealthcarePage({Key? key}) : super(key: key);
+  const HealthcarePage({super.key});
   @override
   State<HealthcarePage> createState() => _HealthcarePageState();
 }
@@ -228,7 +229,7 @@ class _HealthcarePageState extends State<HealthcarePage> {
   /// 🔔  Display in-app alert notification as snackbar
   void _showAlertNotification(String alert) {
     if (!mounted) return;
-    Future.delayed(Duration(milliseconds: 300), () {
+    Future.delayed(const Duration(milliseconds: 300), () {
       if (!mounted) return;
 
       ScaffoldMessenger.of(context).showSnackBar(
@@ -249,7 +250,7 @@ class _HealthcarePageState extends State<HealthcarePage> {
               ),
             ],
           ),
-          backgroundColor: Color(0xFFCC7567), // Couleur orange/rouge
+          backgroundColor: const Color(0xFFCC7567), // Couleur orange/rouge
           duration: const Duration(seconds: 5),
           behavior: SnackBarBehavior.floating,
           shape: RoundedRectangleBorder(
@@ -269,21 +270,24 @@ class _HealthcarePageState extends State<HealthcarePage> {
 
     /// Heart rate analysis
     final avgHR = _todayMetrics.map((m) => m.heartRate).reduce((a, b) => a + b) / _todayMetrics.length;
-    if (avgHR > 100) stressScore += 30;
-    else if (avgHR > 80) stressScore += 15;
+    if (avgHR > 100) {
+      stressScore += 30;
+    } else if (avgHR > 80) stressScore += 15;
     else stressScore += 5;
 
     /// Sleep analysis
     if (_todaySleep != null) {
-      if (_todaySleep!.qualityScore < 50) stressScore += 30;
-      else if (_todaySleep!.qualityScore < 70) stressScore += 15;
+      if (_todaySleep!.qualityScore < 50) {
+        stressScore += 30;
+      } else if (_todaySleep!.qualityScore < 70) stressScore += 15;
       else stressScore += 5;
     }
 
     // Activity analysis
     final totalSteps = _todayMetrics.fold<int>(0, (sum, m) => sum + m.steps);
-    if (totalSteps < 3000) stressScore += 20; // Insuffisant
-    else if (totalSteps > 20000) stressScore += 10; // Suractivité
+    if (totalSteps < 3000) {
+      stressScore += 20; // Insuffisant
+    } else if (totalSteps > 20000) stressScore += 10; // Suractivité
     else stressScore += 5; // Bon
 
     return (stressScore * 0.7).toInt().clamp(0, 100);
@@ -407,12 +411,12 @@ class _HealthcarePageState extends State<HealthcarePage> {
   Widget _buildHeader() {
     return Container(
       padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 12),
-      child: Column(
+      child: const Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Text(
                 'Find Your Balance',
                 style: TextStyle(
@@ -423,8 +427,8 @@ class _HealthcarePageState extends State<HealthcarePage> {
               SizedBox(width: 8),
             ],
           ),
-          const SizedBox(height: 6),
-          const Text(
+          SizedBox(height: 6),
+          Text(
             "Balance is not something you find, it's something you create.",
             textAlign: TextAlign.center,
             style: TextStyle(
@@ -433,7 +437,7 @@ class _HealthcarePageState extends State<HealthcarePage> {
               color: Colors.grey,
             ),
           ),
-          const Divider(),
+          Divider(),
         ],
       ),
     );
@@ -441,16 +445,16 @@ class _HealthcarePageState extends State<HealthcarePage> {
 
   Widget _buildAlertsCard() {
     return Card(
-      color: Color(0xFFF4E4E1),
+      color: const Color(0xFFF4E4E1),
       child: Padding(
         padding: const EdgeInsets.all(16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
+            const Row(
               children: [
                 Icon(Icons.warning_amber, color: Color(0xFFCC7567)),
-                const SizedBox(width: 8),
+                SizedBox(width: 8),
                 Text(
                   'Alerts',
                   style: TextStyle(
@@ -480,11 +484,11 @@ class _HealthcarePageState extends State<HealthcarePage> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Row(
+              const Row(
                 children: [
                   Icon(Icons.event, size: 32, color: Color(0xFF65B8BF)),
-                  const SizedBox(width: 12),
-                  const Text(
+                  SizedBox(width: 12),
+                  Text(
                     'Reminders',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
@@ -508,14 +512,14 @@ class _HealthcarePageState extends State<HealthcarePage> {
                     padding: const EdgeInsets.all(12),
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      border: Border.all(color: Color(0xFF65B8BF)),
+                      border: Border.all(color: const Color(0xFF65B8BF)),
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
-                            Icon(Icons.access_time, size: 16, color: Color(0xFF65B8BF)),
+                            const Icon(Icons.access_time, size: 16, color: Color(0xFF65B8BF)),
                             const SizedBox(width: 8),
                             Text(
                               rec.eventTitle,
@@ -543,12 +547,12 @@ class _HealthcarePageState extends State<HealthcarePage> {
                         Container(
                           padding: const EdgeInsets.all(8),
                           decoration: BoxDecoration(
-                            color: Color(0xFFF1F6F7),
+                            color: const Color(0xFFF1F6F7),
                             borderRadius: BorderRadius.circular(4),
                           ),
                           child: Row(
                             children: [
-                              Icon(Icons.restaurant, size: 16, color: Color(0xFF65B8BF)),
+                              const Icon(Icons.restaurant, size: 16, color: Color(0xFF65B8BF)),
                               const SizedBox(width: 8),
                               Expanded(
                                 child: Text(
@@ -591,11 +595,11 @@ class _HealthcarePageState extends State<HealthcarePage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Header
-            Row(
+            const Row(
               children: [
                 Icon(Icons.psychology, size: 32, color: Color(0xFF65B8BF)),
-                const SizedBox(width: 12),
-                const Text(
+                SizedBox(width: 12),
+                Text(
                   'Stress Analysis',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
@@ -606,18 +610,18 @@ class _HealthcarePageState extends State<HealthcarePage> {
             Container(
               padding: const EdgeInsets.all(12),
               decoration: BoxDecoration(
-                color: Color(0xFFF1F6F7),
+                color: const Color(0xFFF1F6F7),
                 borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: Color(0xFFF1F6F7)!, width: 1),
+                border: Border.all(color: const Color(0xFFF1F6F7), width: 1),
               ),
               child: Row(
                 children: [
-                  Icon(Icons.lightbulb, size: 20, color: Color(0xFF65B8BF)),
+                  const Icon(Icons.lightbulb, size: 20, color: Color(0xFF65B8BF)),
                   const SizedBox(width: 12),
                   Expanded(
                     child: Text(
                       _dailyQuote,
-                      style: TextStyle(
+                      style: const TextStyle(
                         fontSize: 14,
                         fontStyle: FontStyle.italic,
                         color: Colors.black,
@@ -792,7 +796,7 @@ class _HealthcarePageState extends State<HealthcarePage> {
                     '${_todaySleep!.remSleepMinutes} min',
                     'REM Sleep',
                     FontAwesomeIcons.moon,
-                    Color(0xFF65B8BF),
+                    const Color(0xFF65B8BF),
                   ),
 
 
@@ -1013,7 +1017,7 @@ class _HealthcarePageState extends State<HealthcarePage> {
         label: Text(_isAnalyzing ? 'Analyzing… ⏳' : 'Analyze My Day'),
         style: ElevatedButton.styleFrom(
           padding: const EdgeInsets.all(16),
-          backgroundColor: Color(0xFF65B8BF),
+          backgroundColor: const Color(0xFF65B8BF),
           foregroundColor: Colors.white,
           textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
         ),

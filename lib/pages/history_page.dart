@@ -1,4 +1,5 @@
 //// HistoryPage displays all daily summaries of a user (meals, nutrition, recommendations)
+library;
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:intl/intl.dart';
@@ -146,7 +147,7 @@ class _HistoryPageState extends State<HistoryPage> {
                 children: [
                   Row(
                     children: [
-                      Icon(
+                      const Icon(
                         Icons.calendar_today,
                         size: 20,
                         color: Color(0xFF65B8BF),
@@ -170,7 +171,7 @@ class _HistoryPageState extends State<HistoryPage> {
                             ? Icons.check_circle
                             : Icons.info_outline,
                         color:
-                        summary.needsMet ? Colors.green : Color(0xFFCC7567),
+                        summary.needsMet ? Colors.green : const Color(0xFFCC7567),
                       ),
                       PopupMenuButton<String>(
                         icon: const Icon(Icons.more_vert),
@@ -231,7 +232,7 @@ class _HistoryPageState extends State<HistoryPage> {
   Widget _buildStat(String label, String value, IconData icon) {
     return Column(
       children: [
-        Icon(icon, color: Color(0xFF65B8BF), size: 28),
+        Icon(icon, color: const Color(0xFF65B8BF), size: 28),
         const SizedBox(height: 4),
         Text(
           value,
@@ -370,7 +371,7 @@ class _HistoryPageState extends State<HistoryPage> {
           children: [
             Row(
               children: [
-                Icon(icon, color: Color(0xFF65B8BF)),
+                Icon(icon, color: const Color(0xFF65B8BF)),
                 const SizedBox(width: 8),
                 Text(
                   title,

@@ -3,6 +3,7 @@
 /// - Enter personal information (username, age, height, weight)
 /// - Select gender and fitness goals
 /// - Save the profile to Firebase Firestore
+library;
 
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -256,8 +257,8 @@ class _ProfileSetupPageState extends State<ProfileSetupPage> {
                       ),
                       Container(
                         padding: const EdgeInsets.all(8),
-                        decoration: BoxDecoration(
-                          color: const Color(0xFF0A4D50),
+                        decoration: const BoxDecoration(
+                          color: Color(0xFF0A4D50),
                           shape: BoxShape.circle,
                         ),
                         child: const Icon(
@@ -318,7 +319,7 @@ class _ProfileSetupPageState extends State<ProfileSetupPage> {
 
                 // Gender
                 DropdownButtonFormField<String>(
-                  value: _gender,
+                  initialValue: _gender,
                   decoration: InputDecoration(
                     labelText: 'Gender',
                     prefixIcon: const Icon(Icons.wc),
@@ -417,7 +418,7 @@ class _ProfileSetupPageState extends State<ProfileSetupPage> {
 
                 // Goal
                 DropdownButtonFormField<String>(
-                  value: _goal,
+                  initialValue: _goal,
                   decoration: InputDecoration(
                     labelText: 'Fitness & Health Goal',
                     prefixIcon: const Icon(Icons.flag),

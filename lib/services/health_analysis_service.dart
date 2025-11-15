@@ -8,6 +8,7 @@
 /// 3. Perform local threshold checks (HRV drops, low SpO2, poor sleep)
 /// 4. Return alerts that can be used inside the app UI
 ///
+library;
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import '../models/health_models.dart';

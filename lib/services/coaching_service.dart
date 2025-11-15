@@ -2,6 +2,7 @@
 /// AI backend server. It sends user messages, profile data, and history,
 /// then streams back real-time AI coaching responses using SSE-like chunks.
 ///
+library;
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;

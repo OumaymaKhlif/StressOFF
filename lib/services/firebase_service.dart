@@ -10,6 +10,7 @@
 ///      • Saving and retrieving health metrics, sleep data, and daily health summaries
 ///      • Storing LLM-generated health analyses
 ///      This file centralizes **all user data operations** of the app.
+library;
 
 import 'dart:io';
 import 'dart:convert';

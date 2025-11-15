@@ -1,6 +1,7 @@
 /// Provides functions to request calendar permissions and retrieve
 /// today's events from the user's device calendar. Used to integrate
 /// health or scheduling features into the app.
+library;
 
 import 'package:device_calendar/device_calendar.dart';
 import '../models/health_models.dart';

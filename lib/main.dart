@@ -1,6 +1,7 @@
 /// This page initializes Firebase, local notifications, date formatting,
 /// and defines the main app structure. It also contains AuthWrapper,
 /// which redirects the user depending on Firebase authentication state.
+library;
 
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';

@@ -4,6 +4,7 @@
 /// Lists detected ingredients.
 /// Displays health advice and recommendations.
 /// Shows a note if the analysis is a "Try Analysis" (temporary/test analysis).
+library;
 
 import 'package:flutter/material.dart';
 import 'dart:io';
@@ -98,7 +99,7 @@ class MealResultPage extends StatelessWidget {
                       children: analysis.ingredients.map((ingredient) {
                         return Chip(
                           label: Text(ingredient),
-                          backgroundColor: Color(0xFFDEE8EA),
+                          backgroundColor: const Color(0xFFDEE8EA),
                         );
                       }).toList(),
                     ),
@@ -155,9 +156,9 @@ class MealResultPage extends StatelessWidget {
                     Container(
                       padding: const EdgeInsets.all(16),
                       decoration: BoxDecoration(
-                        color: Color(0xFFF4E4E1),
+                        color: const Color(0xFFF4E4E1),
                         borderRadius: BorderRadius.circular(12),
-                        border: Border.all(color: Color(0xFFCC7567)),
+                        border: Border.all(color: const Color(0xFFCC7567)),
                       ),
                       child: const Row(
                         children: [
@@ -208,27 +209,27 @@ class MealResultPage extends StatelessWidget {
             _buildNutritionRow(
               'Calories',
               '${nutrition.calories.toInt()} kcal',
-              Color(0xFFE3997E),
+              const Color(0xFFE3997E),
             ),
             _buildNutritionRow(
               'Proteins',
               '${nutrition.proteins.toStringAsFixed(1)} g',
-              Color(0xFF65B8BF),
+              const Color(0xFF65B8BF),
             ),
             _buildNutritionRow(
               'Carbs',
               '${nutrition.carbs.toStringAsFixed(1)} g',
-              Color(0xFFF0D286),
+              const Color(0xFFF0D286),
             ),
             _buildNutritionRow(
               'Fats',
               '${nutrition.fats.toStringAsFixed(1)} g',
-              Color(0xFFF28B89),
+              const Color(0xFFF28B89),
             ),
             _buildNutritionRow(
               'Fibers',
               '${nutrition.fibers.toStringAsFixed(1)} g',
-                Color(0xFFA4D4A2),
+                const Color(0xFFA4D4A2),
             ),
           ],
         ),
