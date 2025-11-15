@@ -2,7 +2,6 @@
 // where an AI analyzes the food (nutrition, ingredients, health advice)
 // and returns structured results used in the app.
 
-import 'dart:io';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import '../models/meal_models.dart';

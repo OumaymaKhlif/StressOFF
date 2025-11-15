@@ -28,7 +28,7 @@ class _HistoryPageState extends State<HistoryPage> {
 
   @override
   void dispose() {
-    _timer?.cancel();
+    _timer.cancel();
     super.dispose();
   }
 
