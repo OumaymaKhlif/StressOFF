@@ -9,7 +9,7 @@
   <img src="assets/images/logo.png" width="100" alt="App Logo">
 </p>
 
-StressOFF is an AI-powered wellness application designed to improve stress management, nutrition habits, and physiological balance.  
+**StressOFF** is an AI-powered wellness application designed to improve stress management, nutrition habits, and physiological balance.  
 By combining smart meal analysis, real-time biometric monitoring, and calendar-aware insights, StressOFF delivers a personalized and proactive well-being experience.
 
 The app helps users:
@@ -30,7 +30,6 @@ The app helps users:
   - **Meal Analysis** — saves the evaluation to Firebase  
   - **Try Analysis** — instant analysis without saving  
 
----
 
 ### **2. Daily Summary & Personalized Recommendations**  
 Every evening, StressOFF generates a detailed review including:  
@@ -39,7 +38,6 @@ Every evening, StressOFF generates a detailed review including:
 - Detected excesses or deficiencies  
 - Recommendations to improve the next day's meals  
 
----
 
 ### **3. Real-Time Physiological Monitoring**  
 Connected to a smartwatch, StressOFF tracks:  
@@ -51,7 +49,6 @@ Connected to a smartwatch, StressOFF tracks:
 
 Instant alerts are sent when anomalies are detected, along with helpful suggestions.
 
----
 
 ### **4. Calendar Integration**  
 StressOFF syncs with your device calendar to personalize recommendations based on daily workload:  
@@ -60,7 +57,6 @@ StressOFF syncs with your device calendar to personalize recommendations based o
 
 This ensures that guidance always adapts to the user's schedule.
 
----
 
 ### **5. AI Coach Chatbot**  
 A smart conversational assistant offering:  
