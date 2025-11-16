@@ -1,13 +1,12 @@
-![StressOFF Logo](./assets/logo.png)
-# StressOFF 🌿
+<p align="center">
+  <img src="assets/images/logo.png" width="200" alt="App Logo">
+</p>
 
 ![Python](https://img.shields.io/badge/python-3.13-blue)
 ![Flutter](https://img.shields.io/badge/flutter-3.13-blueviolet)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
-
-## Description
 
 **StressOFF** est une application mobile intelligente dédiée au **bien-être et à la gestion du stress**, combinant :
 
