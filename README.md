@@ -21,49 +21,176 @@ The app helps users:
 
 ---
 
-## 🚀 Key Features
+# 🚀 Key Features (with UI Screenshots)
 
-### **1. Smart Meal Analysis (AI-Powered)**  
-- Snap a photo of any meal and select its type: breakfast, lunch, dinner, or snack.  
-- The AI identifies ingredients, estimates nutritional values, and generates personalized dietary suggestions.  
-- Two usage modes:  
-  - **Meal Analysis** — saves the evaluation to Firebase  
-  - **Quick Analysis** — instant analysis without saving  
+## 1. Smart Meal Analysis (AI-Powered)
 
+<table>
+<tr>
+<td width="55%">
 
-### **2. Daily Summary & Personalized Recommendations**  
-Every evening, StressOFF generates a detailed review including:  
+### 🍽️ Smart Meal Analysis  
+StressOFF allows users to take a photo of their meal and instantly receive:  
+- Ingredient detection  
+- Nutritional estimation  
+- Personalized dietary advice  
+
+**Two analysis modes:**  
+- **Meal Analysis** — saves the evaluation to Firebase  
+- **Quick Analysis** — instant analysis without saving  
+
+</td>
+<td width="45%">
+
+<img src="assets/screenshots/meals.png" width="260" alt="Meals Page">
+
+</td>
+</tr>
+</table>
+
+---
+
+## 2. Daily Summary & Personalized Recommendations
+
+<table>
+<tr>
+<td width="55%">
+
+### 📊 Daily Summary  
+Each evening, the app generates a personalized recap including:  
 - Total calorie intake  
 - Nutritional balance  
-- Detected excesses or deficiencies  
-- Recommendations to improve the next day's meals  
+- Excesses and deficiencies  
+- Tailored recommendations for the next day  
 
+This helps users maintain healthy and consistent eating habits.
 
-### **3. Real-Time Physiological Monitoring**  
-Connected to a smartwatch, StressOFF tracks:  
+</td>
+<td width="45%">
+
+<img src="assets/screenshots/history.png" width="260" alt="History Page">
+
+</td>
+</tr>
+</table>
+
+---
+
+## 3. Real-Time Physiological Monitoring
+
+<table>
+<tr>
+<td width="55%">
+
+### ❤️ Real-Time Health Monitoring  
+When paired with a smartwatch, StressOFF tracks key physiological metrics:  
 - Heart Rate (HR)  
 - Heart Rate Variability (HRV)  
 - Blood Oxygen Level (SpO₂)  
-- Active minutes and calories burned  
+- Active minutes & burned calories  
 - Sleep duration and quality  
 
-Instant alerts are sent when anomalies are detected, along with helpful suggestions.
+The system sends **instant alerts** when anomalies appear, along with actionable advice.
 
+</td>
+<td width="45%">
 
-### **4. Calendar Integration**  
-StressOFF syncs with your device calendar to personalize recommendations based on daily workload:  
-- **Busy days** → energizing meals, hydration and relaxation reminders  
-- **Light days** → lighter meals, sleep and recovery optimization  
+<img src="assets/screenshots/dashboard.png" width="260" alt="Dashboard">
 
-This ensures that guidance always adapts to the user's schedule.
+</td>
+</tr>
+</table>
 
+---
 
-### **5. AI Coach Chatbot**  
+## 4. Calendar Integration
+
+<table>
+<tr>
+<td width="55%">
+
+### 📅 Calendar-Aware Insights  
+StressOFF syncs with the device calendar to adjust recommendations based on daily workload:  
+- **Busy days** → energizing meals, hydration, stress-relief breaks  
+- **Light days** → lighter meals, sleep optimization, recovery tips  
+
+Guidance always adapts to the user's lifestyle and schedule.
+
+</td>
+<td width="45%">
+
+<img src="assets/screenshots/calendar.png" width="260" alt="Calendar Integration">
+
+</td>
+</tr>
+</table>
+
+---
+
+## 5. AI Coach Chatbot
+
+<table>
+<tr>
+<td width="55%">
+
+### 🤖 AI Wellness Coach  
 A smart conversational assistant offering:  
-- Personalized health advice  
+- Personalized health and nutrition advice  
 - Stress-relief exercises  
-- Motivational guidance  
-- Contextual recommendations based on meals, health metrics, and planned activities  
+- Motivation and gentle reminders  
+- Context-aware suggestions based on meals, health metrics, and daily plan  
+
+</td>
+<td width="45%">
+
+<img src="assets/screenshots/coach.png" width="260" alt="AI Coach Page">
+
+</td>
+</tr>
+</table>
+
+---
+
+## 6. Authentication & Profile
+
+### 🔐 Authentication (Signup / Login)
+
+<table>
+<tr>
+<td width="55%">
+
+Users can easily create an account and securely log in using Firebase Authentication.  
+This step initializes user preferences and prepares personalized tracking.
+
+</td>
+<td width="45%">
+
+<img src="assets/screenshots/signup.png" width="220" alt="Signup Page">
+<img src="assets/screenshots/login.png" width="220" alt="Login Page">
+
+</td>
+</tr>
+</table>
+
+---
+
+### 👤 User Profile
+
+<table>
+<tr>
+<td width="55%">
+
+The Profile page displays personal information, health preferences, and allows users to adjust their stress or nutrition goals.
+
+</td>
+<td width="45%">
+
+<img src="assets/screenshots/profile.png" width="260" alt="Profile Page">
+
+</td>
+</tr>
+</table>
+
 
 ---
 
