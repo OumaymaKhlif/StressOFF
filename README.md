@@ -22,7 +22,7 @@ The app helps users:
 ---
 
 
-# 🚀 Key Features (with UI Screenshots)
+# 🚀 Key Features
 
 
 ## 1. Authentication & Profile
@@ -39,7 +39,7 @@ This step initializes user preferences and prepares personalized tracking.
 </td>
 <td width="45%">
 
-<img src="assets/screenshots/signup.png" width="220" alt="Signup Page">
+<img src="assets/images/Login_SignUp.png" width="220" alt="Signup Page">
 
 </td>
 </tr>
