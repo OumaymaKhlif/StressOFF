@@ -9,75 +9,91 @@
   <img src="assets/images/logo.png" width="100" alt="App Logo">
 </p>
 
-### 🌿 Your Intelligent Companion for Stress Management, Nutrition, and Daily Well-Being 
+StressOFF is an AI-powered wellness application designed to improve stress management, nutrition habits, and physiological balance.  
+By combining smart meal analysis, real-time biometric monitoring, and calendar-aware insights, StressOFF delivers a personalized and proactive well-being experience.
 
-**StressOFF** is a smart mobile application designed to enhance well-being and stress management by combining:
+The app helps users:
 
-AI-powered meal analysis (Qwen Vision + text models)
+- Maintain healthier eating patterns  
+- Improve recovery and energy levels  
+- Prevent stress and fatigue peaks  
+- Receive actionable, context-aware guidance powered by an AI coach  
 
-Real-time physiological monitoring via smartwatch
+---
 
-Calendar integration for context-aware recommendations
+## 🚀 Key Features
 
-Its purpose is to help users balance their diet, improve recovery, and prevent stress or fatigue peaks through proactive and intelligent assistance.
+### **1. Smart Meal Analysis (AI-Powered)**  
+- Snap a photo of any meal and select its type: breakfast, lunch, dinner, or snack.  
+- The AI identifies ingredients, estimates nutritional values, and generates personalized dietary suggestions.  
+- Two usage modes:  
+  - **Meal Analysis** — saves the evaluation to Firebase  
+  - **Try Analysis** — instant analysis without saving  
 
-**🚀 Key Features**
-**1. Smart Meal Analysis**
+---
 
-Users capture a photo of their meal and select the type: breakfast, lunch, dinner, or snack.
+### **2. Daily Summary & Personalized Recommendations**  
+Every evening, StressOFF generates a detailed review including:  
+- Total calorie intake  
+- Nutritional balance  
+- Detected excesses or deficiencies  
+- Recommendations to improve the next day's meals  
 
-The AI detects ingredients, estimates nutritional values, and provides personalized recommendations.
+---
 
-Two analysis modes:
+### **3. Real-Time Physiological Monitoring**  
+Connected to a smartwatch, StressOFF tracks:  
+- Heart Rate (HR)  
+- Heart Rate Variability (HRV)  
+- Blood Oxygen Level (SpO₂)  
+- Active minutes and calories burned  
+- Sleep duration and quality  
 
-Meal Analysis – saves the meal to Firebase for daily tracking
+Instant alerts are sent when anomalies are detected, along with helpful suggestions.
 
-Try Analysis – instant estimation without saving
+---
 
-**2. Daily Summary & Recommendations**
+### **4. Calendar Integration**  
+StressOFF syncs with your device calendar to personalize recommendations based on daily workload:  
+- **Busy days** → energizing meals, hydration and relaxation reminders  
+- **Light days** → lighter meals, sleep and recovery optimization  
 
-End-of-day analysis summarizing nutritional balance, total calorie intake, and tailored guidance for the following day.
+This ensures that guidance always adapts to the user's schedule.
 
-**3. Continuous Physiological Monitoring**
+---
 
-Tracks heart rate (HR), heart rate variability (HRV), SpO₂, calories burned, active minutes, and sleep duration/quality.
+### **5. AI Coach Chatbot**  
+A smart conversational assistant offering:  
+- Personalized health advice  
+- Stress-relief exercises  
+- Motivational guidance  
+- Contextual recommendations based on meals, health metrics, and planned activities  
 
-Sends immediate alerts when anomalies are detected, along with actionable advice.
+---
 
-**4. Calendar Integration**
+## 🛠 Tech Stack  
 
-Syncs with the device’s calendar to adapt recommendations based on daily workload:
+| Layer | Technology |
+|-------|------------|
+| **Backend** | FastAPI, Python 3.13 |
+| **Frontend** | Flutter |
+| **Database** | Firebase Firestore |
+| **AI Models** | Qwen Vision (image), Qwen / Meta-Llama (text) via OpenRouter API |
+| **Cloud & Deployment** | Microsoft Azure (App Service, Storage, Monitoring) |
+| **Containerization** | Docker (backend containerization & deployment) |
 
-Busy day → energizing meals, recovery breaks
 
-Light day → lighter meals, hydration reminders
+---
 
-**5. AI Coach Chatbot**
+## ⚙️ Installation & Run (Backend)
 
-Natural conversational assistant providing:
-
-Health guidance
-
-Anti-stress exercises
-
-Personalized motivation
-
-Uses nutritional, physiological, and calendar data to deliver fully context-aware coaching.
-
-**🛠 Tech Stack**
-
-Backend: FastAPI, Python 3.13
-
-Frontend: Flutter
-
-Database: Firebase Firestore
-
-AI Models: Qwen Vision, Qwen / Meta-Llama (text), OpenRouter API
-
-**⚙️ Installation & Run**
-Backend
+```bash
 git clone https://github.com/username/stressoff.git
 cd stressoff/backend
 pip install -r requirements.txt
+
+# Add your OpenRouter API key
 export OPENROUTER_API_KEY="your_api_key"
+
+# Start the backend server
 uvicorn main:app --reload
