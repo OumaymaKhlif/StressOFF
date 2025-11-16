@@ -29,21 +29,12 @@ The app helps users:
 
 ### 🔐 Authentication (Signup / Login)
 
-<table>
-<tr>
-<td width="55%">
 
 Users can easily create an account and securely log in using Firebase Authentication.  
 This step initializes user preferences and prepares personalized tracking.
 
-</td>
-<td width="45%">
-
 <img src="assets/images/Login_SignUp.png" width="220" alt="Signup Page">
 
-</td>
-</tr>
-</table>
 
 ---
 
