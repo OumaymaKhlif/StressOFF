@@ -1,6 +1,4 @@
 <p align="left"> <img src="assets/images/logo.png" width="100" alt="App Logo"> </p>
-Your Intelligent Companion for Stress Management, Nutrition, and Daily Well-Being
-
 
 ---
 
