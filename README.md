@@ -1,12 +1,17 @@
-<p align="left"> <img src="assets/images/logo.png" width="100" alt="App Logo"> </p>
-
----
-
 ![Python](https://img.shields.io/badge/python-3.13-blue)
 ![Flutter](https://img.shields.io/badge/flutter-3.13-blueviolet)
+![Firebase](https://img.shields.io/badge/Firebase-Backend-yellow)
+![Azure](https://img.shields.io/badge/Microsoft_Azure-Cloud-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 ---
+# 🌿 StressOFF  
+### Your Intelligent Companion for Stress Management, Nutrition, and Daily Well-Being  
+
+<p align="center">
+  <img src="assets/images/logo.png" width="200" alt="App Logo">
+</p>
 
 **StressOFF** is a smart mobile application designed to enhance well-being and stress management by combining:
 
