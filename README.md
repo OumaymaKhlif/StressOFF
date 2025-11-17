@@ -65,7 +65,7 @@ It calculates a **Stress Index (0-100)** and provides actionable insights:
 - Instant notifications for high stress or anomalies  
 
 <p align="center">
-  <img src="assets/images/Login_SignUp.png" width="350" height:"700" alt="Dashboard">
+  <img src="assets/images/Login_SignUp.png" width="500" height:"700" alt="Dashboard">
 </p>
 
 
