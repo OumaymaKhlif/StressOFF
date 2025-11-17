@@ -157,7 +157,7 @@ StressOFF allows users to take a photo of their meal and instantly receive:
 - **Quick Analysis** — instant analysis without saving  
 
 <p align="center">
-  <img src="assets/images/meal.png" width="650" height:"800" alt="Dashboard">
+  <img src="assets/images/meal_analyze.png" width="650" height:"800" alt="Dashboard">
 </p>
 
 ## 📜 Meal History
