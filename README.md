@@ -42,6 +42,9 @@ This project was developed as part of the **IEEE Computer Society Tunisian Annua
 **IEEE CSTAM 2.0 Logo / Badge:**  
 ![IEEE Logo](https://upload.wikimedia.org/wikipedia/commons/6/6f/IEEE_logo.svg)  
 
+![IEEE CSTAM 2.0](assets/ieee_logo.png)
+
+
 **More Info:** [IEEE CSTAM2.0 Technical Challenge](https://www.ieee.org/)  
 
 
