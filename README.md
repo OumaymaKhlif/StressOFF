@@ -29,7 +29,6 @@ The app helps users:
 
 ### 🔐 Authentication (Signup / Login)
 
-
 Users can easily create an account and securely log in using Firebase Authentication.  
 This step initializes user preferences and prepares personalized tracking.
 
@@ -41,10 +40,6 @@ This step initializes user preferences and prepares personalized tracking.
 
 ## 2. Calendar Integration
 
-<table>
-<tr>
-<td width="55%">
-
 ### 📅 Calendar-Aware Insights  
 StressOFF syncs with the device calendar to adjust recommendations based on daily workload:  
 - **Busy days** → energizing meals, hydration, stress-relief breaks  
@@ -52,22 +47,29 @@ StressOFF syncs with the device calendar to adjust recommendations based on dail
 
 Guidance always adapts to the user's lifestyle and schedule.
 
-</td>
-<td width="45%">
-
-<img src="assets/screenshots/calendar.png" width="260" alt="Calendar Integration">
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="assets/images/Login_SignUp.png" width="350" height:"700" alt="Dashboard">
+</p>
 
 ---
 
-## 3. Real-Time Physiological Monitoring
+## 3. Stress Analysis
 
-<table>
-<tr>
-<td width="55%">
+### 🧘‍♂️ Stress Analysis  
+StressOFF continuously evaluates your stress using physiological data from your smartwatch, including heart rate (HR), heart rate variability (HRV), and sleep patterns.  
+It calculates a **Stress Index (0-100)** and provides actionable insights:  
+- Visual stress level indicator (Low / Moderate / High)  
+- Personalized stress-relief tips and daily recommendations  
+- Motivational quotes to improve mental well-being  
+- Instant notifications for high stress or anomalies  
+
+<p align="center">
+  <img src="assets/images/Login_SignUp.png" width="350" height:"700" alt="Dashboard">
+</p>
+
+---
+
+## 4. Real-Time Physiological Monitoring
 
 ### ❤️ Real-Time Health Monitoring  
 When paired with a smartwatch, StressOFF tracks key physiological metrics:  
@@ -79,22 +81,13 @@ When paired with a smartwatch, StressOFF tracks key physiological metrics:
 
 The system sends **instant alerts** when anomalies appear, along with actionable advice.
 
-</td>
-<td width="45%">
-
-<img src="assets/screenshots/dashboard.png" width="260" alt="Dashboard">
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="assets/images/Login_SignUp.png" width="350" height:"700" alt="Dashboard">
+</p>
 
 ---
 
-## 4. Daily Summary & Personalized Recommendations
-
-<table>
-<tr>
-<td width="55%">
+## 5. Daily Summary & Personalized Recommendations
 
 ### 📊 Daily Summary  
 Each evening, the app generates a personalized recap including:  
@@ -105,22 +98,13 @@ Each evening, the app generates a personalized recap including:
 
 This helps users maintain healthy and consistent eating habits.
 
-</td>
-<td width="45%">
-
-<img src="assets/screenshots/history.png" width="260" alt="History Page">
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="assets/images/Login_SignUp.png" width="350" height:"700" alt="Dashboard">
+</p>
 
 ---
 
-## 5. AI Coach Chatbot
-
-<table>
-<tr>
-<td width="55%">
+## 6. AI Coach Chatbot
 
 ### 🤖 AI Wellness Coach  
 A smart conversational assistant offering:  
@@ -129,22 +113,14 @@ A smart conversational assistant offering:
 - Motivation and gentle reminders  
 - Context-aware suggestions based on meals, health metrics, and daily plan  
 
-</td>
-<td width="45%">
-
-<img src="assets/screenshots/coach.png" width="260" alt="AI Coach Page">
-
-</td>
-</tr>
-</table>
+<p align="center">
+  <img src="assets/images/Login_SignUp.png" width="350" height:"700" alt="Dashboard">
+</p>
 
 ---
 
-## 6. Smart Meal Analysis (AI-Powered)
+## 7. Smart Meal Analysis (AI-Powered)
 
-<table>
-<tr>
-<td width="55%">
 ### 🍽️ Smart Meal Analysis  
 StressOFF allows users to take a photo of their meal and instantly receive:  
 - Ingredient detection  
@@ -155,35 +131,16 @@ StressOFF allows users to take a photo of their meal and instantly receive:
 - **Meal Analysis** — saves the evaluation to Firebase  
 - **Quick Analysis** — instant analysis without saving  
 
-</td>
-<td width="45%">
-
-<img src="assets/screenshots/meals.png" width="260" alt="Meals Page">
-
-</td>
-</tr>
-</table>
-
+<p align="center">
+  <img src="assets/images/Login_SignUp.png" width="350" height:"700" alt="Dashboard">
+</p>
 
 ---
 
 ### 👤 User Profile
 
-<table>
-<tr>
-<td width="55%">
 
 The Profile page displays personal information, health preferences, and allows users to adjust their stress or nutrition goals.
-
-</td>
-<td width="45%">
-
-<img src="assets/screenshots/profile.png" width="260" alt="Profile Page">
-
-</td>
-</tr>
-</table>
-
 
 ---
 
