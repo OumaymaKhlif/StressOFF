@@ -171,7 +171,7 @@ Track nutritional trends over time
 Monitor progress and eating habits
 
 <p align="center">
-  <img src="assets/images/meal.png" width="650" height:"800" alt="Dashboard">
+  <img src="assets/images/History.png" width="650" height:"800" alt="Dashboard">
 </p>
 
 
