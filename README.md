@@ -118,7 +118,7 @@ A smart conversational assistant offering:
 - Context-aware suggestions based on meals, health metrics, and daily plan  
 
 <p align="center">
-  <img src="assets/images/Login_SignUp.png" width="350" height:"700" alt="Dashboard">
+  <img src="assets/images/AICoach.png" width="350" height:"700" alt="Dashboard">
 </p>
 
 
