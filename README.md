@@ -20,9 +20,9 @@ The app helps users:
 - Receive actionable, context-aware guidance powered by an AI coach  
 
 
-
+<br>
 ---
-
+<br>
 
 
 # 🚀 Key Features
