@@ -52,7 +52,7 @@ StressOFF syncs with the device calendar to adjust recommendations based on dail
 Guidance always adapts to the user's lifestyle and schedule.
 
 <p align="center">
-  <img src="assets/images/calendrier.png" width="350" height:"700" alt="Dashboard">
+  <img src="assets/images/calendrier.png" width="550" height:"800" alt="Dashboard">
 </p>
 
 
