@@ -162,7 +162,7 @@ The Profile page displays personal information, health preferences, and allows u
 This diagram summarizes how StressOFF works end-to-end:
 
 <p align="center">
-  <img src="assets/architecture/Workflow.png" width="850" alt="System Workflow">
+  <img src="assets/images/Workflow.png" width="850" alt="System Workflow">
 </p>
 
 ### 📱 Mobile App (Flutter)
